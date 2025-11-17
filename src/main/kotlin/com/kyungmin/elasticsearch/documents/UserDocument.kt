@@ -12,11 +12,21 @@ data class UserDocument(
   val id: String,
 
   @Field(type = FieldType.Keyword)
-  val name: String,
+  var name: String,
 
   @Field(type = FieldType.Integer)
-  val age: Int,
+  var age: Int,
 
   @Field(type = FieldType.Boolean)
-  val isActive: Boolean
-)
+  var isActive: Boolean
+) {
+
+  fun update(
+    id: String,
+    name: String,
+    age: Int,
+    isActive: Boolean
+  ): UserDocument {
+    return UserDocument(id, name, age, isActive)
+  }
+}
