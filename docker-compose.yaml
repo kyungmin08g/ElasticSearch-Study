@@ -1,0 +1,9 @@
+services:
+  elastic:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.4 # Elastic 8.17.4 버전의 이미지
+    ports:
+      - 9200:9200 # 9200 포트에서 Elastic 실행
+    environment:
+      - discovery.type=single-node # 단일 노드
+      - xpack.security.enabled=false # 보안 설정
+      - xpack.security.http.ssl.enabled=false # 보안 설정

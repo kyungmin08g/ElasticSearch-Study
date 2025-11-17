@@ -2,7 +2,7 @@ spring:
   config:
     activate:
       on-profile: local
-    import: application.yml
+    import: application.yaml
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
