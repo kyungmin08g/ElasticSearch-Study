@@ -1,0 +1,28 @@
+###
+GET http://localhost:8080/document/user/52beddef-01e7-4d76-be29-40e990ef96d4
+
+###
+POST http://localhost:8080/document/user/create
+Content-Type: application/json
+
+{
+  "name": "HiHiHi",
+  "age": 19,
+  "isActive": true
+}
+
+###
+GET http://localhost:8080/document/user/list
+
+###
+PUT http://localhost:8080/document/user/update/52beddef-01e7-4d76-be29-40e990ef96d4
+Content-Type: application/json
+
+{
+  "name": "Kyungmin",
+  "age": 21,
+  "isActive": false
+}
+
+###
+DELETE http://localhost:8080/document/user/delete/52beddef-01e7-4d76-be29-40e990ef96d4

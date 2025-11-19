@@ -19,14 +19,4 @@ data class UserDocument(
 
   @Field(type = FieldType.Boolean)
   var isActive: Boolean
-) {
-
-  fun update(
-    id: String,
-    name: String,
-    age: Int,
-    isActive: Boolean
-  ): UserDocument {
-    return UserDocument(id, name, age, isActive)
-  }
-}
+)
