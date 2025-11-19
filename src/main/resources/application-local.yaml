@@ -15,6 +15,4 @@ spring:
 
 logging:
   level:
-#    org.elasticsearch.client: TRACE
-    org.springframework.data.elasticsearch.client: DEBUG
-    org.elasticsearch.client: DEBUG
+    org.elasticsearch.client: TRACE
